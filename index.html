@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Esade Macro Meetings · 2027</title>
+  <style>
+    :root { --navy:#000b3d; --ink:#252a38; --muted:#656b79; --line:#dde0e7; --wash:#f6f7f9; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:white; color:var(--ink); font-family:Arial,Helvetica,sans-serif; font-size:16px; line-height:1.65; }
+    a { color:var(--navy); text-underline-offset:5px; text-decoration-thickness:1px; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible { outline:2px solid var(--navy); outline-offset:5px; }
+    .container { width:min(1120px,calc(100% - 96px)); margin:auto; }
+    .masthead { border-top:5px solid var(--navy); border-bottom:1px solid var(--line); }
+    .header-inner { display:flex; align-items:center; gap:28px; min-height:112px; }
+    .logo { display:block; width:132px; height:auto; }
+    .brand-description { border-left:1px solid var(--line); padding-left:26px; font-size:12px; line-height:1.6; color:var(--muted); }
+    .brand-description strong { color:var(--navy); font-weight:500; }
+    nav { margin-left:auto; display:flex; gap:28px; font-size:14px; }
+    nav a { text-decoration:none; padding:10px 0; white-space:nowrap; }
+    nav a[aria-current="page"] { box-shadow:inset 0 -2px var(--navy); }
+    .hero { padding:66px 0 48px; }
+    .eyebrow { margin:0 0 16px; color:var(--muted); font-size:12px; letter-spacing:.13em; text-transform:uppercase; font-weight:600; }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2,h3 { color:var(--navy); }
+    h1 { font:normal clamp(38px,4.2vw,56px)/1.13 Georgia,'Times New Roman',serif; letter-spacing:-1.6px; margin-bottom:26px; }
+    .hero-grid { display:grid; grid-template-columns:1fr 265px; gap:68px; }
+    .lead { max-width:690px; font-size:18px; line-height:1.75; margin:0; }
+    .event-facts { border-left:1px solid var(--line); padding-left:28px; align-self:center; color:var(--navy); }
+    .event-facts strong { display:block; font:normal 25px/1.25 Georgia,'Times New Roman',serif; margin-bottom:10px; }
+    .event-facts span { display:block; font-size:14px; line-height:1.7; }
+    .actions { display:flex; align-items:center; gap:25px; flex-wrap:wrap; margin-top:29px; font-size:14px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:26px; padding:11px 19px; color:white; background:var(--navy); text-decoration:none; border:1px solid var(--navy); font-size:14px; }
+    .button:hover { background:#162453; text-decoration:none; }
+    .section-nav { display:flex; gap:32px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:16px 0; font-size:13px; }
+    .section-nav a { text-decoration:none; }
+    .section-nav a:hover { text-decoration:underline; }
+    .content-section { display:grid; grid-template-columns:195px 1fr; gap:36px; padding:43px 0; border-bottom:1px solid var(--line); scroll-margin-top:22px; }
+    h2 { font-size:15px; font-weight:600; line-height:1.5; margin:3px 0 0; }
+    h3 { font:normal 25px/1.3 Georgia,'Times New Roman',serif; margin-bottom:7px; letter-spacing:-.4px; }
+    .keynotes { display:grid; grid-template-columns:1fr 1fr; gap:38px; }
+    .keynotes p { font-size:14px; color:var(--muted); margin-bottom:0; }
+    .call-grid { display:grid; grid-template-columns:minmax(0,1fr) 225px; gap:44px; }
+    .call-grid p { margin-bottom:16px; }
+    .dates { margin:0; padding-left:25px; border-left:1px solid var(--line); }
+    .dates dt { color:var(--muted); font-size:12px; margin-bottom:2px; }
+    .dates dd { margin:0 0 17px; color:var(--navy); font-size:16px; }
+    .dates dd:last-child { margin-bottom:0; }
+    .small-link { font-size:14px; }
+    .program-note { margin:0; }
+    .program-note strong { font-weight:500; color:var(--navy); }
+    .secondary { color:var(--muted); font-size:14px; }
+    .program-detail { margin:7px 0 0; }
+    .venue-grid { display:grid; grid-template-columns:1fr 1fr; gap:38px; }
+    .venue-grid p { margin-bottom:10px; }
+    .committee { margin-bottom:10px; line-height:1.9; }
+    .committee a { white-space:nowrap; }
+    .keynotes a, .committee a { text-decoration:none; }
+    .keynotes a:hover, .committee a:hover { text-decoration:none;color:#405584; }
+    .contact-line { margin:22px 0 0; font-size:14px; }
+    .archive-teaser { display:flex; align-items:baseline; justify-content:space-between; gap:24px; padding:29px 0; }
+    .archive-teaser p { margin:0; font-size:14px; color:var(--muted); }
+    .archive-teaser a { font-size:14px; white-space:nowrap; }
+    footer { margin-top:20px; padding:31px 0; background:var(--wash); font-size:12px; color:var(--muted); }
+    .footer-inner { display:flex; justify-content:space-between; gap:35px; align-items:center; }
+    footer strong { color:var(--navy); font-weight:500; }
+    footer a { text-decoration:none; }
+    .archive-intro { max-width:710px; }
+    .archive-list { border-top:1px solid var(--line); }
+    .archive-row { display:grid; grid-template-columns:130px 1fr auto; align-items:center; gap:40px; padding:35px 0; border-bottom:1px solid var(--line); }
+    .year { color:var(--navy); font:normal 36px/1.1 Georgia,'Times New Roman',serif; }
+    .archive-row h2 { font:normal 23px/1.4 Georgia,'Times New Roman',serif; margin-bottom:5px; }
+    .archive-row p { margin:0; font-size:14px; color:var(--muted); }
+    .archive-row a { font-size:14px; }
+    .archive-return { padding:35px 0 58px; font-size:14px; }
+    [hidden] { display:none!important; }
+    @media(max-width:950px) {
+      .container { width:calc(100% - 48px); }
+      .brand-description { display:none; }
+      .hero-grid { grid-template-columns:1fr 225px; gap:30px; }
+      .content-section { grid-template-columns:145px 1fr; gap:25px; }
+      .keynotes,.call-grid,.venue-grid { gap:24px; }
+      h3 { font-size:22px; }
+      .call-grid { grid-template-columns:1fr; }
+      .dates { padding:0; border:0; display:grid; grid-template-columns:1fr 1fr; gap:0 22px; }
+      .dates dt:nth-of-type(1) { grid-column:1;grid-row:1; }
+      .dates dd:nth-of-type(1) { grid-column:1;grid-row:2; }
+      .dates dt:nth-of-type(2) { grid-column:2;grid-row:1; }
+      .dates dd:nth-of-type(2) { grid-column:2;grid-row:2; }
+    }
+    @media(max-width:640px) {
+      .container { width:calc(100% - 40px); }
+      .header-inner { flex-wrap:wrap; gap:12px; padding:20px 0 14px; }
+      .logo { width:110px; }
+      .committee { display:flex; flex-direction:column; align-items:flex-start; }
+      .committee span { display:none; }
+      .committee a, .keynotes h3 a { display:inline-flex; align-items:center; min-height:44px; }
+      .header-inner nav a, .section-nav a { display:inline-flex; align-items:center; min-height:44px; }
+      .section-nav { flex-wrap:wrap; }
+      nav { width:100%; margin:0; justify-content:space-between; gap:18px; font-size:13px; }
+      .hero { padding:38px 0 30px; }
+      h1 { font-size:39px; letter-spacing:-1px; }
+      .hero-grid { grid-template-columns:1fr; gap:23px; }
+      .lead { font-size:16px; }
+      .event-facts { border:0; padding:0; }
+      .event-facts strong { font-size:23px; }
+      .section-nav { gap:0; justify-content:space-between; font-size:12px; }
+      .content-section { grid-template-columns:1fr; gap:20px; padding:30px 0; }
+      .keynotes,.venue-grid { grid-template-columns:1fr; gap:23px; }
+      h3 { font-size:24px; }
+      .archive-teaser,.footer-inner { align-items:flex-start; flex-direction:column; gap:12px; }
+      .archive-row { grid-template-columns:70px 1fr; gap:20px; padding:27px 0; }
+      .archive-row>a { grid-column:2; }
+      .archive-row h2 { font-size:20px; }
+      .year { font-size:30px; }
+    }
+    @media(prefers-reduced-motion:reduce) { html {scroll-behavior:auto;} }
+  .stage-note{font-size:14px;color:var(--muted);margin:16px 0 0}.sample-note{border-left:2px solid #a7adbe;padding:10px 16px;background:var(--wash)}#program .content-section{display:block;padding:16px 0}#program .content-section h2{margin-bottom:8px}.preview-strip{background:#f6f7f9;padding:6px 16px;text-align:center;color:#505767;font-size:12px}.preview-strip a{color:inherit}</style>
+<meta name="referrer" content="no-referrer">
+</head>
+<body>
+  <aside class="preview-strip" aria-label="Organizer preview">Organizer preview <span aria-hidden="true">·</span> <a href="review.html">Preview workshop stages and phone layout</a></aside>
+  <header class="masthead">
+    <div class="container header-inner">
+      <a href="#home" aria-label="Esade Macro Meetings home"><img class="logo" src="assets/esade.png" alt="Esade, Ramon Llull University"></a>
+      <div class="brand-description"><strong>Esade Macro Meetings</strong><br>Group Research in Economics and Finance</div>
+      <nav aria-label="Main navigation">
+        <a href="#home" data-nav="home" aria-current="page">Current edition</a>
+        <a href="#archive" data-nav="archive">Previous editions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <span id="home"></span><main id="home-view" class="container">
+    <div class="hero">
+      <p class="eyebrow">Fourth edition · 2027</p>
+      <h1>Esade Macro Meetings</h1>
+      <div class="hero-grid">
+        <div>
+          <p class="lead">A workshop bringing together researchers in macroeconomics for two days of presentations and discussion at Esade Business School.</p>
+          <div class="actions">
+            <a class="button" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit a paper <span aria-hidden="true">↗</span></a>
+            <a href="assets/call-for-papers-2027.pdf" target="_blank" rel="noopener">Call for papers <span class="secondary">(PDF)</span></a>
+          </div>
+        </div>
+        <div class="event-facts"><strong>May 24–25, 2027</strong><span>Barcelona, Spain</span><span>Esade · Pedralbes Campus</span></div>
+      </div>
+    </div>
+    <nav class="section-nav" aria-label="2027 edition sections">
+      <a href="#keynotes">Keynote speakers</a><a href="#submissions">Submissions</a><a href="#program">Program</a><a href="#venue">Venue</a>
+    </nav>
+    <section class="content-section" id="keynotes">
+      <h2>Keynote speakers</h2>
+      <div class="keynotes">
+        <div><h3><a href="https://silviamirandaagrippino.com/">Silvia Miranda-Agrippino</a></h3><p>University of Oxford</p></div>
+        <div><h3><a href="https://www.simonmongey.com/">Simon Mongey</a></h3><p>Federal Reserve Bank of Minneapolis</p></div>
+      </div>
+    </section>
+    <section class="content-section" id="submissions">
+      <h2>Call for papers</h2>
+      <div class="call-grid">
+        <div><p>We welcome theoretical and empirical papers from all fields of macroeconomics. The workshop provides an informal and highly interactive environment for presenting and discussing research.</p><p>Please submit your paper in PDF format through the submission form.</p><a class="small-link" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit your paper ↗</a> &nbsp;·&nbsp; <a class="small-link" href="assets/call-for-papers-2027.pdf" target="_blank" rel="noopener">Download the call (PDF)</a></div>
+        <dl class="dates"><dt>Submission deadline</dt><dd>February 14, 2027</dd><dt>Acceptance notification</dt><dd>March 1, 2027</dd></dl>
+      </div>
+    </section>
+    <section class="content-section" id="program">
+      <h2>Program</h2>
+      <div><p class="program-note"><strong>The program will be available in March 2027.</strong></p><p class="secondary program-detail">The session schedule and a downloadable PDF will appear here.</p></div>
+    </section>
+    <section class="content-section" id="venue">
+      <h2>Venue</h2>
+      <div class="venue-grid"><div><p>Esade Business School<br>Pedralbes Campus · Barcelona</p><p class="secondary">Room details and travel directions will be added closer to the workshop.</p></div><div><p class="secondary">The workshop will be held in person on May 24 and 25, 2027.</p></div></div>
+    </section>
+    <section class="content-section" id="contact">
+      <h2>Organisers &amp; contact</h2>
+      <div><p class="secondary" style="margin-bottom:5px">Scientific committee</p><p class="committee"><a href="https://sites.google.com/site/calinarcalean/">Calin Arcalean</a><span aria-hidden="true"> · </span><a href="https://paolomengano.com/">Paolo Mengano</a><span aria-hidden="true"> · </span><a href="https://sites.google.com/site/ioanaschiopuweb/">Ioana Schiopu</a><span aria-hidden="true"> · </span><a href="https://sites.google.com/site/carolinavillegassanchez/">Carolina Villegas Sanchez</a></p><p class="secondary" style="margin-bottom:0">Group Research in Economics and Finance (GREF)<br>Esade Business School</p><p class="contact-line">For enquiries: <a href="mailto:em2@esade.edu">em2@esade.edu</a></p></div>
+    </section>
+    <div class="archive-teaser"><p>Explore the workshop’s past editions and programs.</p><a href="#archive">Previous editions →</a></div>
+  </main>
+  <span id="archive"></span><main id="archive-view" class="container" hidden>
+    <div class="hero"><p class="eyebrow">Esade Macro Meetings</p><h1>Previous editions</h1><p class="lead archive-intro">The workshop has brought researchers together at Esade in Barcelona since 2024. Browse the programs from past editions below.</p></div>
+    <div class="archive-list">
+      <article class="archive-row"><div class="year">2026</div><div><h2>Third edition</h2><p>May 14–15, 2026 · Barcelona</p><p>Esade Business School · Pedralbes Campus</p></div><a href="assets/program-2026.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a></article>
+      <article class="archive-row"><div class="year">2025</div><div><h2>Second edition</h2><p>May 15–16, 2025 · Barcelona</p><p>Keynote speaker: Vincent Sterk</p></div><a href="assets/program-2025.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a></article>
+      <article class="archive-row"><div class="year">2024</div><div><h2>First edition</h2><p>May 16–17, 2024 · Barcelona</p><p>Keynote speaker: Nir Jaimovich</p></div><a href="assets/program-2024.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a></article>
+    </div>
+    <div class="archive-return"><a href="#home">← Current edition: May 24–25, 2027</a></div>
+  </main>
+  <footer><div class="container footer-inner"><div><strong>Esade Macro Meetings</strong><br>Group Research in Economics and Finance · Esade Business School</div><a href="mailto:em2@esade.edu">em2@esade.edu</a></div></footer>
+  <script>
+    const stages=['open','closed','program','attending','past'];
+    const stage=stages.includes(document.documentElement.dataset.stage)?document.documentElement.dataset.stage:'open';
+    const hasProgram=['program','attending','past'].includes(stage);
+    const actions=document.querySelector('.actions'), nav=document.querySelector('.header-inner nav');
+    const A=(path,label,cls='')=>'<a class="'+cls+'" href="#'+path+'">'+label+'</a>';
+    const pdf='<a href="assets/call-for-papers-2027.pdf" target="_blank" rel="noopener">Call for papers (PDF)</a>';
+    const submit='<a class="button" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit a paper ↗</a>';
+    const notice={open:'Submission deadline: February 14, 2027.',closed:'Submissions are closed. Acceptance notification: March 1, 2027. The program will be available later in March.',program:'Workshop program · May 24–25, 2027',attending:'Attending in Barcelona · May 24–25, 2027',past:'This edition took place on May 24–25, 2027.'};
+    actions.innerHTML=({open:submit+A('submissions','Call for papers'),closed:A('keynotes','Meet the keynote speakers')+A('venue','Venue'),program:A('program','View the program →','button')+A('venue','Venue'),attending:A('program','View the program →','button')+A('venue','Plan your visit →'),past:A('record','Explore the 2027 edition →','button')+A('archive','Previous editions')})[stage];
+    actions.insertAdjacentHTML('afterend','<p class="stage-note">'+notice[stage]+'</p>');
+    if(stage==='past'){
+      document.querySelector('.archive-list').insertAdjacentHTML('afterbegin','<article class="archive-row"><div class="year">2027</div><div><h2>Fourth edition</h2><p>May 24–25, 2027 · Barcelona</p><p>Silvia Miranda-Agrippino and Simon Mongey</p></div>'+A('record','Edition record →')+'</article>');
+      document.querySelector('.archive-return').innerHTML=A('home','← 2027 edition');
+    }
+    const program='<p class="sample-note">Design preview: the 2027 schedule will be released in March. No session times or speaker assignments are confirmed here.</p><div class="content-section"><h2>Monday, May 24</h2><div><h3>Day one</h3><p>Session times, speakers and paper titles will appear here.</p></div></div><div class="content-section"><h2>Tuesday, May 25</h2><div><h3>Day two</h3><p>Session times, speakers and paper titles will appear here.</p></div></div>';
+    const main=document.querySelector('#home-view'), jump=main.querySelector('.section-nav');
+    const sections=Object.fromEntries([...main.querySelectorAll('section[id]')].map(s=>[s.id,s]));
+    const order={
+      open:['keynotes','submissions','program','venue','contact'],
+      closed:['keynotes','program','venue','contact'],
+      program:['program','keynotes','venue','contact'],
+      attending:['venue','program','keynotes','contact'],
+      past:['program','keynotes','venue','contact']
+    }[stage];
+    if(hasProgram)sections.program.lastElementChild.innerHTML=program;
+    if(stage!=='open')sections.submissions.remove();
+    if(stage==='past'){
+      actions.innerHTML=A('program','View the 2027 program →','button')+A('archive','Previous editions');
+      sections.program.lastElementChild.insertAdjacentHTML('beforeend','<p>Edition record · '+pdf+'</p>');
+      const record=document.querySelector('.archive-row a[href="#record"]');if(record)record.href='#home';
+      nav.querySelector('a[href="#home"]').textContent='2027 edition';
+    }
+    jump.innerHTML=order.filter(id=>id!=='contact').map(id=>A(id,({keynotes:'Keynote speakers',submissions:'Submissions',program:'Program',venue:'Venue'})[id])).join('');
+    const end=main.querySelector('.archive-teaser');order.forEach(id=>main.insertBefore(sections[id],end));
+    function showPage(route){
+      const archive=route==='archive';main.hidden=archive;document.querySelector('#archive-view').hidden=!archive;
+      nav.querySelectorAll('a').forEach(a=>{if(a.hash==='#'+(archive?'archive':route==='contact'?'contact':'home'))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+      document.title=(archive?'Previous editions':'2027 edition')+' · Esade Macro Meetings';
+      const el=order.includes(route)&&document.getElementById(route);
+      if(el)requestAnimationFrame(()=>el.scrollIntoView());else window.scrollTo({top:0,behavior:'instant'});
+    }
+    if(window!==window.parent)document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;const dest=a.getAttribute('href');if(dest?.startsWith('#')){e.preventDefault();showPage(dest.slice(1));}else if(a.protocol==='https:'){a.target='_blank';a.rel='noopener';}});
+    window.addEventListener('hashchange',()=>showPage(location.hash.slice(1)));showPage(location.hash.slice(1));
+  </script>
+</body></html>
