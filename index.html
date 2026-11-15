@@ -74,6 +74,7 @@
     .year { color:var(--navy); font:normal 36px/1.1 Georgia,'Times New Roman',serif; }
     .archive-row h2 { font:normal 23px/1.4 Georgia,'Times New Roman',serif; margin-bottom:5px; }
     .archive-row p { margin:0; font-size:14px; color:var(--muted); }
+    .archive-links { display:flex; flex-wrap:wrap; gap:8px 22px; }
     .archive-row a { font-size:14px; }
     .archive-return { padding:35px 0 58px; font-size:14px; }
     [hidden] { display:none!important; }
@@ -113,7 +114,9 @@
       h3 { font-size:24px; }
       .archive-teaser,.footer-inner { align-items:flex-start; flex-direction:column; gap:12px; }
       .archive-row { grid-template-columns:70px 1fr; gap:20px; padding:27px 0; }
-      .archive-row>a { grid-column:2; }
+      .archive-row>a, .archive-links { grid-column:2; }
+      .archive-links { flex-direction:column; align-items:flex-start; }
+      .archive-links a { display:inline-flex; gap:4px; align-items:center; min-height:44px; }
       .archive-row h2 { font-size:20px; }
       .year { font-size:30px; }
     }
@@ -183,9 +186,9 @@
   <span id="archive"></span><main id="archive-view" class="container" hidden>
     <div class="hero"><p class="eyebrow">Esade Macro Meetings</p><h1>Previous editions</h1><p class="lead archive-intro">The workshop has brought researchers together at Esade in Barcelona since 2024. Browse the programs from past editions below.</p></div>
     <div class="archive-list">
-      <article class="archive-row"><div class="year">2026</div><div><h2>Third edition</h2><p>May 14–15, 2026 · Barcelona</p><p>Esade Business School · Pedralbes Campus</p></div><a href="assets/program-2026.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a></article>
-      <article class="archive-row"><div class="year">2025</div><div><h2>Second edition</h2><p>May 15–16, 2025 · Barcelona</p><p>Keynote speaker: Vincent Sterk</p></div><a href="assets/program-2025.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a></article>
-      <article class="archive-row"><div class="year">2024</div><div><h2>First edition</h2><p>May 16–17, 2024 · Barcelona</p><p>Keynote speaker: Nir Jaimovich</p></div><a href="assets/program-2024.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a></article>
+      <article class="archive-row"><div class="year">2026</div><div><h2>Third edition</h2><p>May 14–15, 2026 · Barcelona</p><p>Esade Business School · Pedralbes Campus</p></div><div class="archive-links"><a href="assets/program-2026.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a><a href="https://www.esade.edu/faculty-research/en/group-research-economics-finance/events/esade-macro-meetings-2026" target="_blank" rel="noopener">Event page at Esade ↗</a></div></article>
+      <article class="archive-row"><div class="year">2025</div><div><h2>Second edition</h2><p>May 15–16, 2025 · Barcelona</p><p>Keynote speaker: Vincent Sterk</p></div><div class="archive-links"><a href="assets/program-2025.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a><a href="https://www.esade.edu/faculty-research/en/group-research-economics-finance/events/esade-macro-meetings-2025" target="_blank" rel="noopener">Event page at Esade ↗</a></div></article>
+      <article class="archive-row"><div class="year">2024</div><div><h2>First edition</h2><p>May 16–17, 2024 · Barcelona</p><p>Keynote speaker: Nir Jaimovich</p></div><div class="archive-links"><a href="assets/program-2024.pdf" target="_blank" rel="noopener">View program <span class="secondary">(PDF)</span> ↗</a><a href="https://www.esade.edu/faculty-research/en/group-research-economics-finance/events/esade-macro-meetings-2024" target="_blank" rel="noopener">Event page at Esade ↗</a></div></article>
     </div>
     <div class="archive-return"><a href="#home">← Current edition: May 24–25, 2027</a></div>
   </main>
