@@ -52,7 +52,6 @@
     .program-note { margin:0; }
     .program-note strong { font-weight:500; color:var(--navy); }
     .secondary { color:var(--muted); font-size:14px; }
-    .program-detail { margin:7px 0 0; }
     .venue-grid { display:grid; grid-template-columns:1fr 1fr; gap:38px; }
     .venue-grid p { margin-bottom:10px; }
     .committee { margin-bottom:10px; line-height:1.9; }
@@ -143,7 +142,7 @@
         <div>
           <p class="lead">A workshop bringing together researchers in macroeconomics for two days of presentations and discussion at Esade Business School.</p>
           <div class="actions">
-            <a class="button" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit a paper <span aria-hidden="true">↗</span></a>
+            <a class="button" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit a paper</a>
             <a href="assets/call-for-papers-2027.pdf" target="_blank" rel="noopener">Call for papers <span class="secondary">(PDF)</span></a>
           </div>
         </div>
@@ -163,17 +162,17 @@
     <section class="content-section" id="submissions">
       <h2>Call for papers</h2>
       <div class="call-grid">
-        <div><p>We welcome theoretical and empirical papers from all fields of macroeconomics. The workshop provides an informal and highly interactive environment for presenting and discussing research.</p><p>Please submit your paper in PDF format through the submission form.</p><a class="small-link" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit your paper ↗</a> &nbsp;·&nbsp; <a class="small-link" href="assets/call-for-papers-2027.pdf" target="_blank" rel="noopener">Download the call (PDF)</a></div>
+        <div><p>We welcome theoretical and empirical papers from all fields of macroeconomics. The workshop provides an informal and highly interactive environment for presenting and discussing research.</p><p>Please submit your paper in PDF format through the submission form.</p><a class="small-link" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit your paper</a> &nbsp;·&nbsp; <a class="small-link" href="assets/call-for-papers-2027.pdf" target="_blank" rel="noopener">Download the call (PDF)</a></div>
         <dl class="dates"><dt>Submission deadline</dt><dd>January 31, 2027</dd><dt>Acceptance notification</dt><dd>February 14, 2027</dd></dl>
       </div>
     </section>
     <section class="content-section" id="program">
       <h2>Program</h2>
-      <div><p class="program-note"><strong>The program will be available in March 2027.</strong></p><p class="secondary program-detail">The session schedule and a downloadable PDF will appear here.</p></div>
+      <div><p class="program-note"><strong>The program will be available in March 2027.</strong></p></div>
     </section>
     <section class="content-section" id="venue">
       <h2>Venue</h2>
-      <div class="venue-grid"><div><p>Esade Business School<br>Pedralbes Campus · Barcelona</p><p class="secondary">Room details and travel directions will be added closer to the workshop.</p></div><div><p class="secondary">The workshop will be held in person on May 24 and 25, 2027.</p></div></div>
+      <div class="venue-grid"><div><p>Esade Business School<br>Pedralbes Campus · Barcelona</p></div><div><p class="secondary">The workshop will be held in person on May 24 and 25, 2027.</p></div></div>
     </section>
     <section class="content-section" id="contact">
       <h2>Organisers &amp; contact</h2>
@@ -198,7 +197,7 @@
     const actions=document.querySelector('.actions'), nav=document.querySelector('.header-inner nav');
     const A=(path,label,cls='')=>'<a class="'+cls+'" href="#'+path+'">'+label+'</a>';
     const pdf='<a href="assets/call-for-papers-2027.pdf" target="_blank" rel="noopener">Call for papers (PDF)</a>';
-    const submit='<a class="button" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit a paper ↗</a>';
+    const submit='<a class="button" href="https://form.jotform.com/262852008329054" target="_blank" rel="noopener">Submit a paper</a>';
     const notice={open:'Submission deadline: January 31, 2027.',closed:'Submissions are closed. Acceptance notification: February 14, 2027. The program will be available later in March.',program:'Workshop program · May 24–25, 2027',attending:'Attending in Barcelona · May 24–25, 2027',past:'This edition took place on May 24–25, 2027.'};
     actions.innerHTML=({open:submit+A('submissions','Call for papers'),closed:A('keynotes','Meet the keynote speakers')+A('venue','Venue'),program:A('program','View the program →','button')+A('venue','Venue'),attending:A('program','View the program →','button')+A('venue','Plan your visit →'),past:A('record','Explore the 2027 edition →','button')+A('archive','Previous editions')})[stage];
     actions.insertAdjacentHTML('afterend','<p class="stage-note">'+notice[stage]+'</p>');
